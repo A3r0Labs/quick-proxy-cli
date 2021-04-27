@@ -24,7 +24,6 @@ int main(int argc, char** argv)
     // CAST THE INPUT/BASE URL TO STRING THEN CAT WITH BASE URL
     string userQuery(argv[1]);
     uri += userQuery;
-    cout << uri;
 
     // MAKE OUR REQUEST - CPP REQUESTS
     cpr::Response r = cpr::Get(cpr::Url{ uri });
